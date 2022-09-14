@@ -1,10 +1,10 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 5. Escribir un programa que calcule la longitud y el área de una circunferencia: Radio = 4
-    // Longitud de la circunferencia = 2 * PI * radio
-    // Área de la circunferencia = PI * radio˄2
+    // 6. Escribir un programa que calcule la velocidad de un proyectil que recorre 2 Km en 5 minutos. Expresar
+    // el resultado en metros/segundo. Velocidad = espacio/tiempo.
 
-    let radio = Number(prompt("El valor del radio es:" , 4))
+    let espacio = Number(prompt("Espacio:" , 2000))
+    let tiempo = Number(prompt("Tiempo:" , 300))
 
-    console.log(`La longitud de la circunferencia es: ${2*(Math.PI)*(radio**2)}`);
+    console.log(`La velocidad del proyectil es de: ${espacio/tiempo} m/seg`);
 
 })
