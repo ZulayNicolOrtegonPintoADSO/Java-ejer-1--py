@@ -1,10 +1,9 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 6. Escribir un programa que calcule la velocidad de un proyectil que recorre 2 Km en 5 minutos. Expresar
-    // el resultado en metros/segundo. Velocidad = espacio/tiempo.
+    // 7. Escribir un programa que calcule el volumen de una esfera:
+    // Radio = 3 volumen de la esfera = 4/3 * PI * radio˄3
 
-    let espacio = Number(prompt("Espacio:" , 2000))
-    let tiempo = Number(prompt("Tiempo:" , 300))
+    let radio = Number(prompt("El valor de radio es:" , 3))
 
-    console.log(`La velocidad del proyectil es de: ${espacio/tiempo} m/seg`);
+    console.log(`El volumen de la esfera cuyo radio es 3 es: ${(4/3)*(Math.PI)*(radio**3)} m/seg`);
 
 })
