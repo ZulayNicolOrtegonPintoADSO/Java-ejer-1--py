@@ -1,23 +1,18 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 19. Un estudiante realiza cuatro exámenes. Realizar el pseudocódigo que representen el algoritmo correspondiente para obtener el promedio de las calificaciones obtenidas. las calificaciones van 1 a 5 puntos.
+    // 20. Un vendedor recibe un sueldo base más el 10% de comisión sobre sus ventas. Si en un mes cualquiera hace tres ventas por valores: v1, v2 y v3, ¿cuánto recibirá por comisión? y ¿cuánto en total sueldo del vendedor?.
 
-    let examen1 = Number(prompt("Nota del examen 1:"))
-    let examen2 = Number(prompt("Nota del examen 2:"))
-    let examen3 = Number(prompt("Nota del examen 3:"))
-    let examen4 = Number(prompt("Nota del examen 4:"))
-
-    nota=(examen1+examen2+examen3+examen4)/4
-
-    if (nota >= 0 && nota < 2.5 ){
-        console.log(`NO APROBÓ`)
-    }
+    let v1 = Number(prompt("Ingrese el valor de la venta 1"))
+    let v2 = Number(prompt("Ingrese el valor de la venta 2"))
+    let v3 = Number(prompt("Ingrese el valor de la venta 3"))
     
-    if (nota == 2.5 && nota <= 5){
-        console.log(`APROBÓ`);
-    }
+    ventas=v1+v2+v3
+    comision=ventas*0.10
 
-    if (nota > 5 ){
-        console.log(`ERROR:Las notas ingresadas no están en el rango de calificación de 1 a 5`);
-    }
+
+    console.log (`valor de las ventas ${ventas}`);
+
+    console.log (`valor de las comision ${comision}`);
+
+    console.log (`Valor total: ${ventas+comision}`);
 
 })
