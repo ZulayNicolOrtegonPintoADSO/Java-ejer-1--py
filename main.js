@@ -1,11 +1,12 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 8. Escribir un programa que evalúe la siguiente expresión:
-    // (a+7*c)/(b+2-a)+2*b
+    // 9. Escribir un programa que calcule el área y el volumen de un cilindro:
+    // A = (2 * (PI * r˄2)) + ((2 * PI * r) * h)
+    // V = (PI * r2) * h
 
-    let a = Number(prompt("Ingrese valor para a:"))
-    let b = Number(prompt("Ingrese valor para b:"))
-    let c = Number(prompt("Ingrese valor para c:"))
+    let r = Number(prompt("Ingrese valor de radio:"))
+    let h = Number(prompt("Ingrese valor de altura:"))
 
-    console.log(`La exresión es (a+7*c)/(b+2-a)+2*b y su resultado es el siguiente: ${(a+7*c)/(b+2-a)+2*b}`);
+    console.log(`El área del cilidro es: ${(2 * ((Math.PI) * (r**2))) + ((2 * (Math.PI) * r) * h)}`);
+    console.log(`El volumen del cilidro es: ${((Math.PI) * (r*2)) * h}`);
 
 })
