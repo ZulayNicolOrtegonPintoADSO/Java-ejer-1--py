@@ -1,21 +1,23 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 2. Pablo compro 5 productos los dos primeros con un 5% de descuento y los 2 últimos con un 2% de
-    // descuento, realice un algoritmo que indique cuanto fue el valor a pagar por cada producto y el total
-    // de la compra.
+
+    // 3. Calcular la edad de una madre en el momento de dio a luz a alguno de sus hijos.
+    // • Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un
+    // depósito.
+    // • Q=V/t, siendo Q (caudal), V (volumen) y t (tiempo).
+    // • Volumen = PI *(radio^2)* H (altura del depósito)
+    // • El tiempo se encuentra en minutos.
+    // • Normalmente se mide el volumen en litros y el tiempo en segundos
     
-    let p1 =Number(prompt("Ingrese valor del producto 1:"))
-    des =  p1 - (p1 * 0.05)
+    let h =Number(prompt("Altura del depósito:"))
 
-    let p2 =Number(prompt("Ingrese valor del producto 2:"))
-    des2 =  p2 - (p2 * 0.05)
+    let r =Number(prompt("Radio del pepósito:"))
 
-    let p3 =Number(prompt("Ingrese valor del producto 3:"))
+    v=((Math.PI) * (r**2) * h)
 
-    let p4 =Number(prompt("Ingrese valor del producto 4:"))
-    des4 =  p1 - (p1 * 0.02)
+    let tm = Number(prompt("Tiempo:"))
 
-    let p5 =Number(prompt("Ingrese valor del producto 5:"))
-    des5 =  p1 - (p1 * 0.02)
-
-    console.log (`El valor de los productos con descuento es: \n -producto 1 = ${des} \n -producto 2 = ${des2} \n -producto 3 = ${p3} \n -producto 4 = ${des4} \n -producto 5 = ${des5}`);
+    ts= tm * 60
+    q= v/ts
+    
+    console.log (`El resultado de tiempo estimado para el llenado de un depósito cuyo volumen es de ${v} litros es ${q} segundos`);
 })
