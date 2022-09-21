@@ -1,14 +1,12 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-//4. Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada  uno por
-// $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar  le
-// sobran $91000. ¿cuánto dinero tenía?
+  // 5.En el programa de cocina de “Doña Anita” han dado la receta para la preparación de   bizcocho especial
+  // de chocolate. Por cada 100 gramos de harina hay que añadir 10 gramos de cacao y un puñado de
+  // nueces. Si quiero prepararlos con 20 gramos de chocolate. La cantidad de gramos de harina   para
+  // hacer el bizcocho es
 
-llaves= 5*11500
-bomba= 1168000
-cajas= 3*87000
-pagó= llaves + bomba + cajas
-vuelto= 91000
-tenía= pagó + vuelto
-console.log(`El jefe de obra pagó un total de ${pagó}, sus vueltos fueron ${vuelto}, es decir que tenía un total de ${tenía}`)
+  let g = Number(prompt("¿Cuántos gramos de cacao desea añadir a la preparación?"))
+  arina = g * 10
+  console.log(`La cantidad de harina que tiene que añadir a su preparación  es de ${arina}`)
+
 })
