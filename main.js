@@ -1,14 +1,14 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-  // 9. Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo,
-  // pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron. Realice el código
-  // que representen el algoritmo para solucionar este problema.
+  // 10. Ingrese una frase que lo identifique como programador de Software y luego mostar esta frase
+  // invertida.
   
-  
-  let nombre = prompt("Ingrese el nombre:")
-  let año = Number(prompt("Ingrese el año de nacimiento:"))
-  let añoac = Number(prompt("Ingrese el año actual"))
+  let frase = prompt("Ingrese la frase de su preferencia:")
 
-  console.log(`La edad que tiene ${nombre} es ${añoac-año}`)
+  console.log(`La frase es: ${frase}`)
+
+  let fraseinvertida =frase.split("").reverse().join("")
+  console.log(`La frase invertida es: ${fraseinvertida}`)
+
 
 })
