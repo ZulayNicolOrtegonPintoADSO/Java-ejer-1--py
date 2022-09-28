@@ -1,12 +1,13 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-  // 7. tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma
-  // 2/3 del total. Jairo un   cuarto del total, y Lorena se   queda con el resto. ¿qué   parte le corresponde a
-  // Lorena?
-  total=10
-  Martín=2/3
-  Jairo=1/5
-  lorena= 10 - 2/3 - 1/5
-  console.log(`A Lorena le corresponde ${lorena}`)
+  // 8. Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que
+  // se cobra por m2 y realice el código que representen el algoritmo que le permita ir generando
+  // presupuestos para cada cliente.
+  
+  
+  let precio = Number(prompt("Ingrese el valor por m2:"))
+  let metroc = Number(prompt("Ingrese la cantidad de m2:"))
+
+  console.log(`El valor total por ${metroc} metro cuadrado es ${precio*metroc}`)
 
 })
